@@ -1,0 +1,7 @@
+{
+  "name": "@laufey/react",
+  "version": "0.0.1",
+  "dependencies": {
+    "@laufey/accordion": "0.0.1"
+  }
+}

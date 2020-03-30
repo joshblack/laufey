@@ -1,0 +1,93 @@
+{
+  "name": "laufey",
+  "private": true,
+  "version": "0.0.0",
+  "license": "MIT",
+  "engines": {
+    "node": "12.x"
+  },
+  "workspaces": {
+    "packages": [
+      "config/*",
+      "packages/*"
+    ],
+    "nohoist": ""
+  },
+  "scripts": {
+    "build": "yarn clean && yarn lerna run build",
+    "ci-check": "yarn format:diff && yarn lerna run ci-check",
+    "clean": "lerna run clean && lerna clean --yes && rimraf node_modules",
+    "format": "prettier --write '**/*.{js,md,scss,ts,yml}' '!**/{build,es,lib,storybook,ts,umd}/**'",
+    "format:diff": "prettier --list-different '**/*.{js,md,scss,ts,yml}' '!**/{build,es,lib,storybook,ts,umd}/**'"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@laufey/prettier": "0.0.1",
+    "husky": "^4.2.3",
+    "lerna": "^3.20.2",
+    "lint-staged": "^10.0.10",
+    "prettier": "^2.0.2",
+    "rimraf": "^3.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "header-max-length": [
+        2,
+        "always",
+        72
+      ],
+      "body-max-line-length": [
+        2,
+        "always",
+        80
+      ],
+      "scope-case": [
+        0,
+        "always",
+        "lower-case"
+      ],
+      "type-enum": [
+        2,
+        "always",
+        [
+          "build",
+          "ci",
+          "chore",
+          "docs",
+          "feat",
+          "fix",
+          "perf",
+          "refactor",
+          "revert",
+          "test"
+        ]
+      ]
+    }
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "prettier --write",
+      "eslint",
+      "git add"
+    ],
+    "packages/components/**/*.scss": [
+      "prettier --write",
+      "git add"
+    ],
+    "!(*sass).md": [
+      "alex",
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
