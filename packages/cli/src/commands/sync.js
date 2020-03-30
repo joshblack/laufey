@@ -5,7 +5,7 @@ const { getWorkspace } = require('../workspace');
 const tasks = {
   npm: require('./sync/npm'),
   'package.json': require('./sync/packageJson'),
-  // readme: require('./sync/readme'),
+  readme: require('./sync/readme'),
 };
 
 async function sync(args) {

@@ -1,5 +1,6 @@
 {
   "name": "@laufey/accordion",
+  "description": "An accordion built for the Laufey Design System",
   "version": "0.0.1",
   "license": "MIT",
   "main": "index.js",
