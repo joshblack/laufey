@@ -75,17 +75,7 @@
     }
   },
   "lint-staged": {
-    "**/*.js": [
-      "prettier --write",
-      "eslint",
-      "git add"
-    ],
-    "packages/components/**/*.scss": [
-      "prettier --write",
-      "git add"
-    ],
-    "!(*sass).md": [
-      "alex",
+    "**/*.{md,js,yml}": [
       "prettier --write",
       "git add"
     ]
