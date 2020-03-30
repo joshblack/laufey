@@ -5,15 +5,25 @@
   "bin": {
     "laufey": "./bin/laufey-cli.js"
   },
+  "repository": "https://github.com/joshblack/laufey/tree/master/packages/cli",
+  "bugs": "https://github.com/joshblack/laufey/issues",
+  "keywords": [
+    "design system",
+    "component library"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "build": "yarn clean && rollup -c --preserveModules",
-    "clean": "rimraf lib",
-    "watch": "yarn clean && rollup -c -w"
+    "build": "yarn clean",
+    "clean": "rimraf lib"
   },
   "dependencies": {
     "@laufey/babel-preset-laufey": "0.0.1",
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
+    "fast-glob": "^3.2.2",
+    "fs-extra": "^9.0.0",
     "rollup": "^2.3.0",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-sourcemaps": "^0.5.0",
