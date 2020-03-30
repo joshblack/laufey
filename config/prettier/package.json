@@ -2,5 +2,11 @@
   "name": "@laufey/prettier",
   "private": true,
   "version": "0.0.1",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "https://github.com/joshblack/laufey/tree/master/config/prettier",
+  "bugs": "https://github.com/joshblack/laufey/issues",
+  "keywords": [
+    "design system",
+    "component library"
+  ]
 }
