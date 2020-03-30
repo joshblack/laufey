@@ -3,6 +3,9 @@
 > Laufey is an exploration around building design systems in React. This work is
 > experimental and should be treated as unstable.
 
+<a href="https://github.com/joshblack/laufey/actions?query=workflow%3A%22Continuous+Integration%22">
+  <img src="https://github.com/joshblack/laufey/workflows/Continuous%20Integration/badge.svg" alt="Continuous Integration status" />
+</a>
 <a href="https://github.com/joshblack/laufey/blob/master/LICENSE">
   <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Laufey is released under the MIT license" />
 </a>
