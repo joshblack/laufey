@@ -10,6 +10,31 @@
   <img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg" alt="Maintained with Lerna" />
 </a>
 
+## Roadmap
+
+### Components
+
+WCAG 2.1 Compliant implementations of the following components (or patterns):
+
+- [ ] Accordion
+- [ ] Alert
+- [ ] Alert dialog
+- [ ] Breadcrumbs
+- [ ] Button
+- [ ] Checkbox
+- [ ] Dialog
+- [ ] Disclosure
+- [ ] Popover (non-modal dialog)
+- [ ] Tabs
+- [ ] Table
+- [ ] Tooltip
+- [ ] List box
+- [ ] Combobox
+  - [ ] with list box
+  - [ ] with tree view
+  - [ ] with grid
+- [ ] Tree view
+
 ## 📝 License
 
 Licensed under the [MIT License](/LICENSE).
