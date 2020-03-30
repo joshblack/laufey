@@ -29,7 +29,7 @@ if (major < 12) {
   process.exit(1);
 }
 
-var main = require('../lib/cli');
+var main = require('../src/cli');
 
 main(process).catch((error) => {
   console.error(error);

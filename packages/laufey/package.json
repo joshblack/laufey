@@ -1,6 +1,16 @@
 {
   "name": "@laufey/react",
   "version": "0.0.1",
+  "license": "MIT",
+  "repository": "https://github.com/joshblack/laufey/tree/master/packages/laufey",
+  "bugs": "https://github.com/joshblack/laufey/issues",
+  "keywords": [
+    "design system",
+    "component library"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@laufey/accordion": "0.0.1"
   }

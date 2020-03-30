@@ -1,5 +1,16 @@
 {
   "name": "@laufey/accordion",
+  "description": "An accordion built for the Laufey Design System",
   "version": "0.0.1",
-  "main": "index.js"
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "https://github.com/joshblack/laufey/tree/master/packages/accordion",
+  "bugs": "https://github.com/joshblack/laufey/issues",
+  "keywords": [
+    "design system",
+    "component library"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
