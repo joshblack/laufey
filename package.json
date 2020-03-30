@@ -18,11 +18,13 @@
     "ci-check": "yarn format:diff && yarn lerna run ci-check",
     "clean": "lerna run clean && lerna clean --yes && rimraf node_modules",
     "format": "prettier --write '**/*.{js,md,scss,ts,yml}' '!**/{build,es,lib,storybook,ts,umd}/**'",
-    "format:diff": "prettier --list-different '**/*.{js,md,scss,ts,yml}' '!**/{build,es,lib,storybook,ts,umd}/**'"
+    "format:diff": "prettier --list-different '**/*.{js,md,scss,ts,yml}' '!**/{build,es,lib,storybook,ts,umd}/**'",
+    "sync": "laufey sync"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@laufey/cli": "0.0.1",
     "@laufey/prettier": "0.0.1",
     "husky": "^4.2.3",
     "lerna": "^3.20.2",
