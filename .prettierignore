@@ -1,2 +1,7 @@
 .pnp.js
 .yarn
+storybook-static
+build
+es
+lib
+umd
