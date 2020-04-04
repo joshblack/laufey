@@ -12,5 +12,17 @@
   ],
   "publishConfig": {
     "access": "public"
+  },
+  "scripts": {
+    "build": "yarn clean && laufey develop src --build",
+    "clean": "laufey clean storybook-static",
+    "develop": "laufey develop src"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "@laufey/cli": "0.0.1",
+    "react": "^16.13.1"
   }
 }
