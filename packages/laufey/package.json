@@ -11,7 +11,15 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "clean": "laufey clean storybook-static",
+    "build": "yarn clean && yarn build-storybook",
+    "develop": "yarn clean && yarn start-storybook"
+  },
   "dependencies": {
     "@laufey/accordion": "0.0.1"
+  },
+  "devDependencies": {
+    "@laufey/cli": "0.0.1"
   }
 }
